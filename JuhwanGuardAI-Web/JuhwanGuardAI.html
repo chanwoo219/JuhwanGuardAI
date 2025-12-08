@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JGAI</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JuhwanGuardAI — 깔끔한 보안 대시보드</title>
+  <meta name="description" content="실시간 모니터링·이상탐지·간단한 자동화 기능을 제공하는 JuhwanGuardAI 소개 페이지" />
   <link rel="stylesheet" href="./JuhwanGuardAI.css">
 </head>
 <body>
@@ -22,14 +23,13 @@
     </div>
 
     <div class="textbox">
-      <textarea></textarea>
-      <button>검사하기</button>
+      <textarea id="messageInput" placeholder="메시지를 입력하세요"></textarea>
+      <button id="checkBtn">검사하기</button>
     </div>
 
-
-    <div class="result_report">
+    <div class="result_report" id="resultBox">
       <h2>검사 결과</h2>
-      <p>여기에 검사 결과가 표시됩니다.</p>
+      <p id="resultText">여기에 검사 결과가 표시됩니다.</p>
     </div>
 
     <footer id="contact">
@@ -46,7 +46,7 @@
       </div>
     </footer>
   </div>
-  
+
   <script src="./JuhwanGuardAI.js"></script>
 </body>
 </html>
