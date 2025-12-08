@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juhwan Guard AI</title>
-    <link href="JuhwanGuardAI.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JGAI</title>
+  <link rel="stylesheet" href="./JuhwanGuardAI.css">
 </head>
 <body>
-    <h1>Juhwan Guard AI</h1>
+  <div class="container">
+    <nav>
+      <a href="" class="logo">JuhwanGuardAI</a>
+      <a href="#features">특징</a>
+    </nav>
+
+    <div class="characteristic">
+      <h1>JuhwanGuardAI의 특징</h1>
+      <ul>
+        <li>피싱메세지 검거: 보이스피싱으로 의심되는 문자를 잡아줍니다.</li>
+        <li>피싱 링크 검거: 보이스피싱 링크를 검열해드립니다.</li>
+      </ul>
+    </div>
+
+    <div class="textbox">
+      <textarea></textarea>
+      <button>검사하기</button>
+    </div>
+
+
+    <div class="result_report">
+      <h2>검사 결과</h2>
+      <p>여기에 검사 결과가 표시됩니다.</p>
+    </div>
+
+    <footer id="contact">
+
+    </footer>
+  </div>
+  
+  <script src="./JuhwanGuardAI.js"></script>
 </body>
-<script src="JuhwanGuardAI.js"></script>
 </html>
