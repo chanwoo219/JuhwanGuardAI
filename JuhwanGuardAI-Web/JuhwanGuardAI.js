@@ -22,7 +22,7 @@
 
     function analyzeURL(text) {
       let score = 0;
-      const suspiciousPatterns = ["paypa1", "facebo0k", "kaka0"];
+      const suspiciousPatterns = [".com", ".net", "bit.ly", "tinyurl", "무료", "당첨"];
 
       suspiciousPatterns.forEach(s => {
         if (text.includes(s)) score += 40;
@@ -50,3 +50,4 @@
       box.style.borderLeft = `8px solid ${result.color}`;
       text.innerHTML = `결과: <strong>${result.level}</strong> (점수: ${result.score})`;
     });
+
